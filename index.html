@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Streamer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="mainTitle" style="color: red;">FaZe</h1>
+
+    <div>
+        <!-- Clicking this mainTitle toggles streamer buttons -->
+        <button id="fazeButton">Show/Hide Streamers</button>
+    </div>
+
+    <div id="streamer-list" style="display: none; margin-top: 10px;">
+        <!-- Each button calls 'selectCreator' in script.js with the streamer name -->
+        <button class="creator" onclick="selectCreator('lacy')">Lacy</button>
+        <button class="creator" onclick="selectCreator('stableronaldo')">Ronaldo</button>
+        <button class="creator" onclick="selectCreator('silky')">Silky</button>
+        <button class="creator" onclick="selectCreator('jasontheween')">Jason</button>
+        <button class="creator" onclick="selectCreator('adapt')">Adapt</button>
+        <button class="creator" onclick="selectCreator('plaqueboymax')">Max</button>
+    </div>
+
+    <!-- Section to display clips -->
+    <div id="clips-container" style="margin-top: 20px;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
